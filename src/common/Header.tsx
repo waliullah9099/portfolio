@@ -1,31 +1,39 @@
 import { Link } from "react-router-dom";
-import logo from "../assets/logo/logo_2.png";
 
 const Header = () => {
   return (
-    <header className="bg-white shadow-md flex items-center justify-between px-4 py-4 sticky top-0">
-      <div>
-        <img className="h-12 w-40" src={logo} alt="" />
-      </div>
-      <nav className="flex space-x-4">
-        <Link className="menuItem" to="/favorites">
-          Favorites
-        </Link>
-        <Link className="menuItem" to="/resources">
-          Resources
-        </Link>
-        <Link className="menuItem" to="/latest-ai-news">
-          Latest AI News
-        </Link>
-        <Link className="menuItem" to="dashboard">
-          dashboard
-        </Link>
-        <button className="menuItem">Join Discord</button>
-        <button className="inline-block px-4 py-2 rounded-md bg-blue-500 text-white hover:bg-blue-700">
-          Subscribe
-        </button>
-      </nav>
-    </header>
+    <div>
+      <header className="border-b border-slate-700 flex items-center justify-between px-4 py-4 sticky top-0 bg-black z-10">
+        <div>
+          <h1 className="text-xl space-x-4 font-bold tracking-widest text-white">
+            WALIULLAH
+          </h1>
+        </div>
+        <nav className="flex space-x-4">
+          <Link className="menuItem" to="/favorites">
+            Home
+          </Link>
+          <Link className="menuItem" to="/resources">
+            About
+          </Link>
+          {/* <Link className="menuItem" to="/resources">
+            Service
+          </Link>
+          <Link className="menuItem" to="/resources">
+            Contact
+          </Link> */}
+          <Link className="menuItem" to="/latest-ai-news">
+            Latest AI News
+          </Link>
+          <Link className="menuItem" to="dashboard">
+            Dashboard
+          </Link>
+          <button className="inline-block px-4 py-2 rounded-md bg-blue-500 text-white hover:bg-blue-700">
+            Subscribe
+          </button>
+        </nav>
+      </header>
+    </div>
   );
 };
 

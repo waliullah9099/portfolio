@@ -9,7 +9,8 @@
 
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+  /* color: #213547; */
+  background-color: #141410;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -19,7 +20,7 @@
 
 @layer components {
   .menuItem {
-    @apply p-2 text-gray-700 font-semibold hover:text-gray-900 hover:hover:bg-slate-200 rounded-lg;
+    @apply p-2 text-white font-semibold hover:text-gray-900 hover:hover:bg-slate-200 rounded-lg;
   }
 }
 
