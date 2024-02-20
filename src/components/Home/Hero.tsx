@@ -17,9 +17,11 @@ const Hero = () => {
               excepturi exercitationem quasi. In deleniti eaque aut repudiandae
               et a id nisi.
             </p>
-            <button className="btn btn-outline border-white text-white">
-              Download Resume
-            </button>
+            <div className="tooltip tooltip-bottom" data-tip="PDF Download">
+              <button className="btn btn-outline border-white  text-white">
+                Download Resume
+              </button>
+            </div>
           </div>
         </div>
         <div>

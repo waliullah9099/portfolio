@@ -22,6 +22,89 @@
   .menuItem {
     @apply p-2 text-white font-semibold hover:text-gray-900 hover:hover:bg-slate-200 rounded-lg;
   }
+  .dashboardArrow {
+    @apply w-10 h-10 rounded-full text-blue-500 hover:bg-slate-200 p-2;
+  }
+  .dashboarLogout {
+    @apply h-8 w-8 inline text-blue-500  rounded-full hover:bg-gray-200;
+  }
+}
+
+/* cursor custom design  */
+
+body::after {
+  position: absolute;
+  content: "";
+  transform: translateY(-50%);
+}
+
+#cursor {
+  position: fixed;
+  width: 40px;
+  height: 40px;
+  border: 1px solid white;
+  border-radius: 50%;
+  top: 0;
+  left: 0;
+  transform: translate(-50%, -50%);
+  transition: 0.1s;
+  pointer-events: none;
+  z-index: 99;
+}
+
+#cursor2 {
+  position: fixed;
+  width: 8px;
+  height: 8px;
+  background-color: white;
+  /* background-color: #ff5733; */
+  border-radius: 50%;
+  top: 0;
+  left: 0;
+  transform: translate(-50%, -50%);
+  transition: 0.08s;
+  pointer-events: none;
+  z-index: 99;
+}
+
+body:hover ~ #cursor {
+  transform: translate(-50%, -50%) scale(1.5);
+  background-color: #fff;
+  opacity: 0.4;
+}
+
+body:hover ~ #cursor2 {
+  display: none;
+}
+
+/* scroll bar percentage */
+#progress {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  position: fixed;
+  bottom: 45px;
+  right: 25px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  display: grid;
+  place-items: center;
+  z-index: 9;
+  transition: all 3ms;
+}
+
+#progress-value {
+  display: block;
+  height: calc(100% - 5px);
+  width: calc(100% - 5px);
+  background-color: #141410;
+  border-radius: 50%;
+  display: grid;
+  color: white;
+  place-items: center;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 22px;
+  z-index: 9;
 }
 
 a {

@@ -28,10 +28,14 @@ const Header = () => {
           <Link className="menuItem" to="dashboard">
             Dashboard
           </Link>
-          <button className="inline-block px-4 py-2 rounded-md bg-blue-500 text-white hover:bg-blue-700">
+          <button className="inline-block px-4 py-2 rounded-md bg-slate-700 text-white hover:bg-blue-700">
             Subscribe
           </button>
         </nav>
+        {/* <motion.div
+          className="w-full fixed top-10 bg-cyan-50"
+          style={{ height: "1px", scaleX: scrollYProgress }}
+        ></motion.div> */}
       </header>
     </div>
   );
